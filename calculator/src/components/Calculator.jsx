@@ -3,9 +3,21 @@ import "./Calculator.css";
 import { evaluate } from "mathjs";
 
 export default function Calculator() {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("0");
 
-  const handleClick = (value) => setInput((prev) => prev + value);
+  const handleClick = (value) => {
+  setInput((prev) => {
+    if (prev === "0" && value !== ".") {
+      return value;
+    }
+
+    if (prev === "0" && value === "0") {
+      return prev;
+    }
+
+    return prev + value;
+  });
+};
 
   const handleCalculate = () => {
     try {
@@ -16,7 +28,7 @@ export default function Calculator() {
     }
   };
 
-  const handleClear = () => setInput("");
+  const handleClear = () => setInput("0");
 
   return (
     <div className="calculator-wrapper">
