@@ -28,7 +28,7 @@ git clone <repository-url>
 2. Navigate to the project directory:
 
 ```bash
-cd react-stylish-calculator
+cd react-calculator
 ```
 
 3. Install dependencies:
