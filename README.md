@@ -65,6 +65,8 @@ calculator/
 ├─ package.json
 └─ README.md
 ```
+## Online Demo
+https://replit.com/@Kiuliumov/CalculatorReactJSApp
 
 ## License
 
