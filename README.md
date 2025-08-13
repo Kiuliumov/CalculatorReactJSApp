@@ -71,5 +71,5 @@ calculator/
 This project is open-source and available under the MIT License.
 
 ## Screenshot
-![Calculator Screenshot](screenshots/image.png)
+![Calculator Screenshot](screenshots/calculator.png)
 
